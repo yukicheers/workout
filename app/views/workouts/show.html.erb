@@ -1,0 +1,15 @@
+<h1>Workout</h1>
+<h3>Tweet詳細</h3>
+<div class="workout">
+  <p><%= @workouts.name %></p>
+  <p><%= @workouts.explain %></p>
+  <p><%= @workouts.number %></p>
+  <p><%= @workouts.time %></p>
+  <p><%= @workouts.created_at %></p>
+  <p><%= @workouts.updated_at %></p>
+  <p><%= @workouts.category %></p>
+  <p><%= @workouts.youtube_url %></p>
+</div>
+
+<%= link_to "Tweet一覧に戻る", workouts_path %>
+<%= link_to "編集する", edit_workout_path(@workouts.id) %>

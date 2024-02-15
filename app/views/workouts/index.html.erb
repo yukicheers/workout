@@ -1,0 +1,47 @@
+<div class="content">
+  
+  <div class="main-container">
+  <header class="header-content">
+    <ul class="header-list">
+      <%= link_to "診断を始める", new_perfume_path, class: "link" %>
+    </ul>
+  </header>
+  <div class="larger-heading">WORKOUT</div>
+    <h3>一覧ページ</h3>
+    <%= link_to "arm", workouts_arm_path %>
+    <%= link_to "chest", workouts_breast_path %>
+    <%= link_to "abdomen", workouts_stomach_path %>
+    <%= link_to "legs", workouts_legs_path %>
+  </div>
+
+  <div class="word"><h5>鍛えたい部位をクリックしていただくとそれ関連のページに飛ぶことができます。</h5></div>
+  
+  <div class="body">
+    <div class="person">
+      <div class="head"></div>
+      <a href="workouts/breast"><div class="chest"></div></a>
+      <a href="workouts/stomach"><div class="abdomen"></div></a>
+      <a href="workouts/arm"><div class="left-arm"></div>
+      <div class="right-arm"></div></a>
+      <a href="workouts/legs"><div class="left-leg"></div>
+      <div class="right-leg"></div></a>
+    </div>
+  </div>
+
+  <div class="tweets-container">
+  <%= link_to "新規投稿へ", new_workout_path %>
+    <% @workouts.each do |t| %>
+      <div class="tweet">
+        <%= t.name %>
+        <%= t.explain %>
+        <%= t.number %>
+        <%= t.time %>
+        <%= t.category %>
+        <%= link_to "詳細へ", workout_path(t.id) %>
+        <%= link_to "編集する", edit_workout_path(t.id) %>
+        <%= button_to "削除する", workout_path(t.id), method: :delete %>
+      </div>
+    <% end %>
+  </div>
+
+</div>

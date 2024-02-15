@@ -1,0 +1,7 @@
+<%= form_for @workouts do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, :size => 140 %>
+    <%= f.text_field :explain, :size => 140 %>
+    <%= f.text_field :number, :size => 140 %>
+    <%= f.submit "編集する" %>
+  <% end %>

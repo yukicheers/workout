@@ -1,0 +1,151 @@
+// Place all the styles related to the workouts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.content{
+    background-color: black;
+    color: white;
+    text-align:center;
+}
+
+.header-content{
+    display:flex;
+    height:100px;
+}
+
+.main-container{
+    font-family:"Protest Guerrilla";
+    background-image: url("workouts.image.jpg");
+    height:600px;
+}
+
+.tweets-container{
+    height: 100vh;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    top: 60px;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+}
+
+.person {
+    display:flex;
+    position: relative;
+    width: 120px;
+    height: 400px;
+}
+
+.head, .chest, .abdomen, .left-arm, .right-arm, .left-leg, .right-leg {
+    position: absolute;
+    background-color: white
+}
+
+.head {
+    width: 60%;
+    height: 60px;
+    border-radius: 50%;
+    top: 0;
+    left: 25px;
+}
+
+.chest {
+    width: 80px;
+    height: 70px;
+    top: 60px;
+    left: 20px;
+}
+
+.abdomen {
+    width: 100px;
+    height: 80px;
+    top: 130px;
+    left: 10px;
+}
+
+.left-arm, .right-arm {
+    width: 20px;
+    height: 120px;
+    top: 60px;
+}
+
+.left-arm {
+    left: -20px;
+}
+
+.right-arm {
+    left: 120px;
+}
+
+.left-leg, .right-leg {
+    width: 25px;
+    height: 150px;
+    top: 210px;
+}
+
+.left-leg {
+    left: 5px;
+}
+
+.right-leg {
+    left: 90px;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+}
+
+.word{
+    top: 100px;
+}
+
+.larger-heading {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.perfume-container {
+    background-color: black;
+    color: white;
+    text-align:center;
+    font-size:20px;
+    height:600px;
+}
+
+.col-12{
+    height: 25vh;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.col-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    margin: 0;
+}
+
+.sindanbotan{
+    height: 25vh;
+}
+
+.intoro{
+    height:100px;
+    background-color: black;
+}
+
+.part-content{
+    background-color: black;
+    color: white;
+    text-align:center;
+    height:600px;
+}
